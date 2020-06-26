@@ -1,13 +1,10 @@
-# Companies House Laravel 5 package
-
-[![Total Downloads](https://poser.pugx.org/trevsewell/companieshouse/downloads)](https://packagist.org/packages/trevsewell/companieshouse)
-[![License](https://poser.pugx.org/trevsewell/companieshouse/license)](https://packagist.org/packages/trevsewell/companieshouse)
+# Companies House Laravel package
 
 A laravel package to query the Companies House API.
 
 ## Install
 ```
-composer require trevsewell/companieshouse
+composer require kudosagency/companieshouse
 ```
 
 ## Publish config file
@@ -22,7 +19,7 @@ COMPANIES_HOUSE_API_KEY=Your_api_key
 
 ## Usage
 ```
-use Trevsewell\CompaniesHouse\Controllers\CompaniesHouse;
+use kudosagency\CompaniesHouse\Controllers\CompaniesHouse;
 ```
 To use
 ```
