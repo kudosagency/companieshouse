@@ -1,5 +1,5 @@
 {
-    "name": "trevsewell/companieshouse",
+    "name": "kudosagency/companieshouse",
     "description": "A Laravel wrapper for the companies house API",
     "license": "Unlicense",
     "authors": [
@@ -16,16 +16,16 @@
             "src\\Helpers\\TestHelpers.php"
         ],
         "psr-4": {
-            "Trevsewell\\CompaniesHouse\\": "src/"
+            "KudosAgency\\CompaniesHouse\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Trevsewell\\CompaniesHouse\\Providers\\ServiceProvider"
+                "KudosAgency\\CompaniesHouse\\Providers\\ServiceProvider"
             ],
             "aliases": {
-                "CompaniesHouse": "Trevsewell\\CompaniesHouse\\Facades\\CompaniesHouse"
+                "CompaniesHouse": "KudosAgency\\CompaniesHouse\\Facades\\CompaniesHouse"
             }
         }
     },

@@ -1,9 +1,9 @@
 <?php
 
-namespace Trevsewell\CompaniesHouse;
+namespace KudosAgency\CompaniesHouse;
 
 use PHPUnit\Framework\TestCase;
-use Trevsewell\CompaniesHouse\Controllers\CompaniesHouse;
+use KudosAgency\CompaniesHouse\Controllers\CompaniesHouse;
 
 class CompaniesHouseTest extends TestCase
 {

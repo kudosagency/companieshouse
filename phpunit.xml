@@ -17,7 +17,7 @@
         </whitelist>
     </filter>
     <php>
-        <const name="ENDPOINT" value="https://api.companieshouse.gov.uk/"/>
-        <const name="KEY" value="Mw306TUrgaK3ODbOqXGUaCKt0M-m_sp-JDL-AJAY"/>
+        <const name="companieshouse.endpoint" value="https://api.companieshouse.gov.uk/"/>
+        <const name="companieshouse.key" value="Mw306TUrgaK3ODbOqXGUaCKt0M-m_sp-JDL-AJAY"/>
     </php>
 </phpunit>

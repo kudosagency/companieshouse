@@ -1,11 +1,5 @@
 <?php
-/**
- * Companies House controller
- *
- * @package trevsewell/companieshouse
- * @author Trevor Sewell <trev@kudos.agency>
- */
-namespace Trevsewell\CompaniesHouse\Controllers;
+namespace KudosAgency\CompaniesHouse\Controllers;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
@@ -40,32 +34,6 @@ class CompaniesHouse
     {
         try {
             $response = call_user_func_array([$this->client, $name], $arguments);
-        }
-        catch (ClientException $e) {
-            $response = $e->getResponse();
-        }
-
-        return json_decode(
-            $response->getBody()->getContents()
-        );
-    }
-
-    /**
-     * Overload static methods for facade
-     *
-     * @param  string $name
-     * @param  array  $arguments
-     * @return object
-     */
-    public static function __callStatic(string $name, array $arguments)
-    {
-        $client = new Client([
-            'base_uri' => config('companieshouse.endpoint'),
-            'auth' => [config('companieshouse.key'), '']
-        ]);
-
-        try {
-            $response = call_user_func_array([$client, $name], $arguments);
         }
         catch (ClientException $e) {
             $response = $e->getResponse();

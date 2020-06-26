@@ -1,11 +1,5 @@
 <?php
-/**
- * Companies House service provider
- *
- * @package trevsewell/companieshouse
- * @author Trevor Sewell <trev@kudos.agency>
- */
-namespace Trevsewell\CompaniesHouse\Providers;
+namespace KudosAgency\CompaniesHouse\Providers;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 

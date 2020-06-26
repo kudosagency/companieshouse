@@ -1,6 +1,6 @@
 <?php
 
-namespace Trevsewell\CompaniesHouse\Facades;
+namespace KudosAgency\CompaniesHouse\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,6 +13,6 @@ class CompaniesHouse extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'CompaniesHouse';
+        return \KudosAgency\CompaniesHouse\Controllers\CompaniesHouse::class;
     }
 }
